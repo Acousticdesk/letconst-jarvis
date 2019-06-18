@@ -1,4 +1,5 @@
 import React from 'react'
+import 'isomorphic-fetch'
 
 import Greetings from './components/Greetings'
 import JarvisResponse from './components/JarvisResponse'
