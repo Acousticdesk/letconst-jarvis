@@ -5,7 +5,7 @@ import useRecipeQuery from './useRecipeQuery'
 
 export default () => {
   const {hasGreetingsToJarvis} = useGreetingsContext()
-  const {handleRecipeQueryChange} = useRecipeQuery()
+  const {handleRecipeQueryChange, fetchRecipes} = useRecipeQuery()
 
   return hasGreetingsToJarvis() && (
     <div>
@@ -16,7 +16,12 @@ export default () => {
           name="recipe_query"
           onChange={handleRecipeQueryChange}
         />
-        <button type="button">What are you waiting for?</button>
+        <button
+          type="button"
+          onClick={fetchRecipes}
+        >
+          What are you waiting for?
+        </button>
       </div>
     </div>
   )

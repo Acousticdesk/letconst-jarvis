@@ -13,7 +13,6 @@ export default () => {
         type="text"
         name="greetings"
       />
-      <button type="button">Say</button>
     </div>
   )
 }
