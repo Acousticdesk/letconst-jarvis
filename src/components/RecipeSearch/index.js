@@ -1,11 +1,11 @@
 import React from 'react'
 
 import useGreetingsContext from '../Greetings/useGreetingsContext'
-import useRecipeQuery from './useRecipeQuery'
+import useRecipeContext from './useRecipeContext'
 
 export default () => {
   const {hasGreetingsToJarvis} = useGreetingsContext()
-  const {handleRecipeQueryChange, fetchRecipes} = useRecipeQuery()
+  const {handleRecipeQueryChange, fetchRecipes} = useRecipeContext()
 
   return hasGreetingsToJarvis() && (
     <div>

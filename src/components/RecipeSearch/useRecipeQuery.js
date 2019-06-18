@@ -31,7 +31,7 @@ export default () => {
       .then(res => res.json())
       .then(res => {
         console.log(res.hits)
-        setFetchesRecipes(res.hits)
+        setFetchesRecipes(res.hits.map(hit => hit.recipe))
       })
       .catch(() => setFetchesRecipes(FETCHED_RECIPES_FALLBACK))
       .finally(() => setIsLoading(false))
