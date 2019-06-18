@@ -13,8 +13,8 @@ const App = () => (
     <useGreetingsContext.Provider>
       <Greetings />
       <JarvisResponse />
+      <RecipeSearch />
     </useGreetingsContext.Provider>
-    <RecipeSearch />
   </>
 )
 
