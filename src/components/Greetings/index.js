@@ -2,15 +2,14 @@ import React from 'react'
 import useGreetingsContext from './useGreetingsContext'
 
 export default () => {
-  const [greetings, setGreeting] = useGreetingsContext()
-  const handleGreetingChange = e => setGreeting(e.target.value)
+  const {greetings, handleGreetingsChange} = useGreetingsContext()
 
   return (
     <div>
       -
       <input
         value={greetings}
-        onChange={handleGreetingChange}
+        onChange={handleGreetingsChange}
         type="text"
         name="greetings"
       />

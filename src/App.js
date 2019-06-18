@@ -10,8 +10,8 @@ import './App.css'
 
 const App = () => (
   <>
-    <Greetings />
     <useGreetingsContext.Provider>
+      <Greetings />
       <JarvisResponse />
     </useGreetingsContext.Provider>
     <RecipeSearch />

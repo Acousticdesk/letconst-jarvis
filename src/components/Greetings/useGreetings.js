@@ -5,5 +5,7 @@ const DEFAULT_GREETING = ''
 export default () => {
   const [greetings, setGreeting] = useState(DEFAULT_GREETING)
 
-  return [greetings, setGreeting]
+  const handleGreetingsChange = e => setGreeting(e.target.value)
+
+  return {greetings, handleGreetingsChange}
 }
