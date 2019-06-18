@@ -1,5 +1,10 @@
 import React from 'react'
 
-export default () => (
-  <p>- Good day, mr Stark! How can I help you?</p>
-)
+import useGreetingsContext from './Greetings/useGreetingsContext'
+
+export default () => {
+  const [greetings] = useGreetingsContext()
+
+  return greetings && <p>- Good day, mr Stark! How can I help you?</p>
+
+}

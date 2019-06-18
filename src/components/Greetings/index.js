@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-
-const DEFAULT_GREETING = ''
+import React from 'react'
+import useGreetingsContext from './useGreetingsContext'
 
 export default () => {
-  const [greetings, setGreeting] = useState(DEFAULT_GREETING)
-
+  const [greetings, setGreeting] = useGreetingsContext()
   const handleGreetingChange = e => setGreeting(e.target.value)
 
   return (
