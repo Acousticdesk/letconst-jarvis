@@ -9,7 +9,7 @@ export default () => {
 
   return hasGreetingsToJarvis() && (
     <div>
-      - JARVIS, I need to impress mrs Stark with my cooking talent. I need recipes with
+      - JARVIS, I need to impress Mrs. Stark with my cooking talent. I need recipes with
       <div>
         <input
           type="text"
@@ -20,7 +20,7 @@ export default () => {
           type="button"
           onClick={fetchRecipes}
         >
-          What are you waiting for?
+          What are you waiting for? Let's do it!
         </button>
       </div>
     </div>

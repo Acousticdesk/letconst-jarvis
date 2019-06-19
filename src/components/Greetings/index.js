@@ -6,6 +6,8 @@ export default () => {
 
   return (
     <div>
+      {/*  */}
+      <h3>Say "Hi, Jarvis!" or "Bueno, Jarvis!" to activate Jarvis</h3>
       -
       <input
         value={greetings}
